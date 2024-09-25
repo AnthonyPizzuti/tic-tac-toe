@@ -8,7 +8,7 @@ body {
 }
 
 #content {
-  margin-top: 300px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@ body {
 
 /* Tic Tac Toe Tabelle */
 table {
-  margin: 20px auto;
+  margin: 20px;
   border-collapse: collapse; /* Entfernt die äußeren Ränder */
   border-spacing: 5px; /* Fügt einen Abstand von 5px zwischen den Zellen hinzu */
 }
@@ -83,4 +83,14 @@ Button {
 Button:hover {
   background-color: #70571b; /* Etwas dunklerer Farbton bei Hover */
   color: white;
+}
+
+#currentPlayerDisplay {
+  margin-bottom: 20px; /* Abstand zum Inhalt */
+  font-size: 32px; /* Schriftgröße */
+  color: #ffc000; /* Schriftfarbe */
+}
+
+span {
+  color: rgb(211, 24, 24);
 }

@@ -54,6 +54,9 @@ function handleClick(cell, index) {
       currentPlayer === "circle" ? generateCircleSVG() : generateCrossSVG();
     cell.onclick = null;
     currentPlayer = currentPlayer === "circle" ? "cross" : "circle";
+    document.getElementById("currentPlayer").textContent =
+      currentPlayer === "circle" ? "Kreis" : "Kreuz";
+    cell.setAttribute("onclick", "");
 
     if (isGameFinished()) {
       const winCombination = getWinningCombination();
